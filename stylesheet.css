@@ -1,0 +1,100 @@
+div#container {
+    border: 1px solid black;
+    min-height: 500px;
+    min-width: 900px;
+    /*width: 700px;*/
+    margin: 0 auto 0 auto; /* order: top right left bottom (TRLB)*/
+    font-family: Arial, Helvetica, sans-serif;
+
+/*
+> direct descendant
+every item
+*/
+    > * {  /* all direct children of the div container */
+        border: 1px solid blue;
+        margin: 5px;
+        > img {
+            width: 100%;
+        }
+    }
+
+    section.content {
+        background: url('files/uofu_medallion_rt.gif') bottom right no-repeat;
+        div.nav {
+            text-align: right;
+            a {
+                color: black;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                img {
+                    vertical-align: auto;
+                }
+            }
+            span:after {
+                content: "|";
+                margin: 0 5px;
+            }
+            &.bottom-nav {
+                a {
+                    text-transform: lowercase;
+                }
+            }
+        }
+
+        div.brown-box {
+            background-color: rosybrown;
+            border-radius: 15px;
+            margin: 15px 10px 70px;
+            padding: 20px;
+            min-height: 500px;
+
+            nav, article {
+                width: 45%;
+                color: white;
+            }
+
+            nav {
+                float: left;
+                width: 25%;
+                a {
+                    border-bottom: 1px solid black;
+                    /*puts elements on their own line in the block, and not next ot each other.*/
+                    display: block;
+                    color: black;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    /*removes annoying underline in links*/
+                    text-decoration: none;
+                    /*margin: 0 0 10px 0;*/
+                    padding: 15px 0 15px 20px;
+
+                    &:hover {
+                        /*pseudoclass of 'a'*/
+                        background-color: saddlebrown;
+                        color: white;
+                    }
+                }
+            }
+            article {
+                width: 65%;
+                float: right;
+                background-color: deeppink;
+                padding: 10px
+            }
+        }
+    }
+
+    footer {
+        background-color: darkolivegreen;
+        color: white;
+        /*if a user doesn't have arial, it switches to helvetica*/
+        text-align: center;
+        font-size: 10px;
+        padding: 8px;
+    }
+}
