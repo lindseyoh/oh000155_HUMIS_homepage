@@ -25,16 +25,15 @@ div#container {
 
         div.nav {
             text-align: right;
-
+            padding-right: 15px;
+            font-size: 12px;
             a {
                 color: black;
                 text-decoration: none;
                 text-transform: uppercase;
-
                 &:hover {
                     text-decoration: underline;
                 }
-
                 img {
                     vertical-align: auto;
                 }
@@ -44,20 +43,22 @@ div#container {
                 content: "|";
                 margin: 0 5px;
             }
-
+            /* this targets a nav element whose class is nav and also whose class is bottom-nav*/
             &.bottom-nav {
                 a {
+                    font-size: 10px;
                     text-transform: lowercase;
                 }
             }
         }
 
         div.brown-box {
-            background-color: rosybrown;
+            background-color: #c1c7bb;
             border-radius: 15px;
             margin: 15px 10px 70px;
-            padding: 20px;
+            padding: 20px 20px 20px 90px;
             min-height: 500px;
+            position: relative;
 
             nav, article {
                 width: 45%;
@@ -67,33 +68,33 @@ div#container {
             nav {
                 float: left;
                 width: 25%;
-
                 a {
-                    border-bottom: 1px solid black;
+                    border-bottom: 1.5px solid green;
                     /*puts elements on their own line in the block, and not next ot each other.*/
                     display: block;
                     color: black;
-                    font-size: 11px;
+                    font-size: 13px;
                     text-transform: uppercase;
                     /*removes annoying underline in links*/
                     text-decoration: none;
                     /*margin: 0 0 10px 0;*/
-                    padding: 15px 0 15px 20px;
+                    padding: 20px 0 20px 20px;
 
                     &:hover {
                         /*pseudoclass of 'a'*/
-                        background-color: saddlebrown;
+                        background-color: darkolivegreen;
                         color: white;
                     }
                 }
             }
-
             article {
                 width: 65%;
                 float: right;
                 background-color: white;
                 padding: 10px;
-
+                > img {
+                    width: 100%;
+                }
                 h2 {
                     color: red;
                     border-bottom: 2px dotted red;
@@ -129,6 +130,18 @@ div#container {
             }
             div.float_clear {
                 clear: both;
+            }
+            div.login {
+                /* adjusts the position yoiiii*/
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 0 0 70px 30px;
+                img {
+                    width: 120%;
+                    display: block;
+                    margin: 20px 0;
+                }
             }
         }
     }
