@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
 div#container {
-    /*border: 1px solid black;*/
     min-height: 500px;
     min-width: 900px;
     /*width: 700px;*/
@@ -13,8 +12,6 @@ div#container {
     */
 
     > * { /* all direct children of the div container */
-        /*border: 1px solid blue;*/
-        /*margin: 5px;*/
 
         > img {
             width: 100%;
@@ -89,7 +86,6 @@ div#container {
                     text-transform: uppercase;
                     /*removes annoying underline in links*/
                     text-decoration: none;
-                    /*margin: 0 0 10px 0;*/
                     padding: 20px 0 20px 20px;
 
                     &:hover {
@@ -120,7 +116,6 @@ div#container {
 
                 p {
                     font-size: 15px;
-                    /*color: red;*/
                     font-family: Helvetica;
                     letter-spacing: 0;
                     &.learn_more{
@@ -156,7 +151,6 @@ div#container {
 
                 img {
                     width: 120%;
-                    /*max-width: 400%;*/
                     display: block;
                     margin: 20px 0;
                 }
